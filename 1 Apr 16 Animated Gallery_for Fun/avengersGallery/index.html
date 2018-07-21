@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Super Heroes Gallery</title>
+	<link rel="stylesheet" type="text/css" href="css/animation.css">
+	<link rel="stylesheet" type="text/css" href="css/masterCSS.css">
+</head>
+<body id="body" class="spidermanBody">
+	<img src="images/rain.gif" width="100%" height="100%" id="rainFall" title="Ohh is it Raining? Click to stop the rain">
+<div class="bodyInner">
+
+	<div class="themeSelectorBttnWrap">
+		<ul class="leftBttnWrap" id="leftBttnGroup">
+			<li><a href="#" class="themeBttn spidermanBttn activeThemeClass" id="spiderman"></a></li>
+			<li><a href="#" class="themeBttn batmanBttn" id="batman"></a></li>
+			<li><a href="#" class="themeBttn ironmanBttn" id="ironman"></a></li>
+		</ul>
+		<ul class="rightBttnWrap" id="rightBttnGroup">
+			<li><a href="#" class="themeBttn thorBttn" id="thor"></a></li>
+			<li><a href="#" class="themeBttn captamericaBttn" id="captamerica"></a></li>
+			<li><a href="#" class="themeBttn hulkBttn" id="hulk"></a></li>
+		</ul>
+	</div>
+
+	<div class="contentWrapper">
+
+		<div class="bannerSlider"><!-- Common Slider for All Themes -->
+			<img id="mainSlider" src="images/spiderman/0.jpg" alt="bannerImage">
+		</div><!-- Common Slider Ends -->
+		<a href="#" class="spidermanPrev" title="Previous Slide" id="allPrev"></a>
+		<a href="#" class="spidermanNext" title="Next Slide" id="allNext"></a>
+
+		<div class="themeWrap spidermanTheme" id="spidermanTheme"><!-- SPIDER MAN THEME -->
+			<div class="sliderSpidyWrap">
+				<div class="sliderSpidy"></div>
+			</div>
+			<div class="leftSpidyWrap">
+				<div class="leftSpidy"></div>
+			</div>
+			<div class="rightSpidyWrap">
+				<div class="rightSpidy"></div>
+			</div>
+		</div><!-- SPIDER MAN THEME ENDS -->
+
+		<div class="themeWrap batmanTheme" id="batmanTheme"><!-- BAT MAN THEME -->
+			<div class="fullBat">
+				<img class="left_wing" src="images/batman/leftWing.png">
+				<img class="right_wing" src="images/batman/rightWing.png">
+				<img class="batBody" src="images/batman/bodyBatnew.png">
+			</div>
+			<div class="rightBatmanWrap">
+				<div class="rightBatman"></div>
+			</div>
+		</div><!-- BAT MAN THEME ENDS -->
+
+		<div class="themeWrap ironmanTheme" id="ironmanTheme"><!-- IRON MAN THEME -->
+			<div class="ironmanWrap">
+				<div class="ironman"></div>
+			</div>
+		</div><!-- IRON MAN ENDS -->
+
+		<div class="themeWrap thorTheme" id="thorTheme"><!-- THOR THEME -->
+			<div class="thorFlyWrap">
+				<div class="thorFly"></div>
+			</div>
+		</div><!-- THOR THEME ENDS -->
+
+		<div class="themeWrap captamericaTheme" id="captamericaTheme"><!-- captamericaTheme THEME -->
+			<div class="captamericaFlyWrap">
+				<div class="captamericaFly"></div>
+			</div>
+		</div><!-- captamericaTheme THEME ENDS -->
+
+		<div class="themeWrap hulkTheme" id="hulkTheme"><!-- HULK THEME -->
+			<div class="hulkFlyWrap">
+				<div class="hulkFly"></div>
+			</div>
+		</div><!-- HULK THEME ENDS -->
+
+	</div><!-- contentWrapper Ends -->	
+	
+</div>
+
+<script type="text/javascript" src="js/avengerGallery.js"></script>
+</body>
+</html>

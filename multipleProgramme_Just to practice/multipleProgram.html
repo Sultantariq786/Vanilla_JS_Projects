@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Multiple Programm</title>
+	<link rel="stylesheet" href="css/multiprogram.css" type="text/css">
+</head>
+<body>
+
+<div class="calcMainWrapper" id="calcMainWrapperId">
+	<div class="title" id="titleCalcId">My Calculator</div>
+	<input id="calcresultId" value=""></input>
+	<div class="bttnWrapper">
+		<div class="bttnRow">
+			<span class="bttn" id="oneId">1</span>
+			<span class="bttn" id="twoId">2</span>
+			<span class="bttn" id="threeId">3</span>
+			<span class="bttn" id="plusId">+</span>
+		</div>
+		<div class="bttnRow">
+			<span class="bttn" id="fourId">4</span>
+			<span class="bttn" id="fiveId">5</span>
+			<span class="bttn" id="sixId">6</span>
+			<span class="bttn" id="minusId">-</span>
+		</div>
+		<div class="bttnRow">
+			<span class="bttn" id="sevenId">7</span>
+			<span class="bttn" id="eightId">8</span>
+			<span class="bttn" id="nineId">9</span>
+			<span class="bttn" id="multiplyId">x</span>
+		</div>
+		<div class="bttnRow">
+			<span class="bttn" id="clearId">C</span>
+			<span class="bttn" id="zeroId">0</span>
+			<span class="bttn" id="equalsId">=</span>
+			<span class="bttn" id="divideId">/</span>
+		</div>
+	</div>
+	<hr></hr>
+	<!-- Array / String Buttons -->
+	<div class="bttnRow arrayStringBttnWrap">
+			<span class="bttn" id="arrayBttnId">Array</span>
+			<span class="bttn" id="stringBttnId">String</span>
+			<span class="bttn" id="phoneBookAdd" style="width: 164px !important;">Show/Add Phone Rec</span>
+	</div>	
+</div><!-- calcMainWrapper Ends -->
+
+<div class="midWrapper" id="midWrapperId">
+	<div class="title" id="titleMidId">Control Panel</div>
+	<div class="bttnRow">
+			<span class="bttn" id="capsId">A</span>
+			<span class="bttn" id="smallId">a</span>
+			<span class="bttn" id="fontPlusId">f+</span>
+			<span class="bttn" id="fontMinusId">f-</span>
+	</div>
+	<div class="bttnRow">
+			<span class="bttn" id="boldId" style="font-weight: bold;">b</span>
+			<span class="bttn" id="italicId" style="font-style: italic;">i</span>
+			<span class="bttn" id="underlineId" style="text-decoration: underline;">u</span>
+			<span class="bttn" id="resetId">Reset</span>
+	</div>
+	<div class="inputRow" style="float: left; margin-right: 10px; margin-bottom:10px; ">
+		<div class="inputField txtColorWdth" id="textColorTxtId">Database Text Color:</div><input class="inputBox txtColorWdth" id="txtColorId" type="text" />
+	</div>	
+	<div class="inputRow" style="float: left; margin-bottom:10px; ">
+		<div class="inputField txtColorWdth" id="themeTxtId">Theme:</div>
+		<select class="theme" id="themeId">
+			<option value="light">Light</option>
+			<option value="dark">Dark</option>
+		</select>
+	</div>
+	<div class="title" id="titlePhoneBookId">Phone Book</div>
+	<div class="inputRow fltLeft">
+		<div class="inputField" id="sNoIdTxt" style="width: 160px;">S.No:</div><input class="inputBox" style="width: 160px;margin-right: 2px;" id="phoneSnoId" type="text" />
+	</div>
+	<div class="inputRow fltLeft">
+		<div class="inputField" id="nameIdtxt" style="width: 160px;">Name:</div><input class="inputBox" style="width: 160px;" id="phoneNameId" type="text" />
+	</div>
+	<div class="inputRow fltLeft">
+		<div class="inputField" id="mobNoIdtxt" style="width: 160px;">Mobile Number:</div><input class="inputBox" style="width: 160px;margin-right: 2px;" id="phoneMobileNoId" type="text" />
+	</div>
+	<div class="inputRow fltLeft">
+		<div class="inputField" id="catIdtxt" style="width: 160px;">Category:</div><input class="inputBox" style="width: 160px;" id="phoneCatId" type="text" />
+	</div>
+</div><!-- midWrapper Ends -->
+
+<div class="inputWrapper" id="inputWrapperId">
+	<div class="title" id="titleInputId">Input Fields</div>
+	<div class="inputRow">
+		<div class="inputField" id="input1Id">Field 1:</div><input class="inputBox" id="field1Id" type="text" />
+	</div>
+	<div class="inputRow">
+		<div class="inputField" id="input2Id">Field 2:</div><input class="inputBox" id="field2Id" type="text" />
+	</div>
+	<div class="bttnRow">
+			<span class="bttn" id="addId">Add</span>
+			<span class="bttn" id="deleteId">Delete</span>
+			<span class="bttn" id="concatId">Concat</span>
+			<span class="bttn" id="findId">Find</span>
+			<span class="bttn" id="findReplaceId">Find/Replace</span>
+			<span class="bttn" id="searchBtnId">Search</span>
+	</div>
+	<div class="inputRow">
+		<div class="inputField" id="inputSearchId">Search:</div><input class="inputBox" id="inputSearch" type="text" />
+	</div>	
+</div><!-- inputWrapper Ends -->
+
+<div class="databaseWrapper" id="databaseWrapperId">
+	<div class="title" id="titleDataId">Array/String Database</div>
+	<div class="database" id="dataBaseId"></div>
+</div><!-- backEndWrapper Ends -->
+
+<div class="resultWrapper" id="resultWrapperId">
+	<div class="title" id="titleResultId">Display Result</div>
+	<div class="display" id="displayId"></div>
+</div>
+
+
+
+<script type="text/javascript" src="js/multiprogram.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+
+body	{
+	color: #000;
+}
+
+.fltLeft{float: left;}
+.fltRight{float: right;}
+.center{margin: 0px auto;}
+
+.calcMainWrapper, .midWrapper, .inputWrapper, .databaseWrapper, .resultWrapper{
+		width: 188px;
+		height: 350px;
+		padding: 10px;
+		border: 1px solid #d4d4d4;
+		border-radius: 5px;
+		margin: 0px auto;
+		background: #ececec;
+		box-shadow: 0px -1px 2px #747474 inset;
+		float: left;
+		margin-right: 10px;
+	}
+
+	.resultWrapper{
+		width: 1300px;
+		margin-top: 10px;
+		height: 250px;
+	}
+
+	.midWrapper{
+		width: 350px;
+	}
+
+	.inputWrapper{
+		width: 250px;
+		font-family: Tahoma;
+		font-size: 14px;
+	}
+
+	.databaseWrapper{
+		width: 415px;
+		overflow: hidden;
+	}
+
+	.database{
+		word-wrap: break-word;
+		overflow: auto;
+	}
+
+	.txtColorWdth{
+		width: 158px !important	;
+	}
+
+	.theme{
+		width: 164px;
+		padding: 5px;
+		cursor: pointer;
+		border: 1px solid #cecece;
+	}
+
+	.title{
+		font-family: Tahoma;
+		font-size: 15px;
+		text-align: center;
+		font-weight: bold;
+		color: #747474;
+		margin-bottom: 10px;
+	}
+
+	.calcMainWrapper .bttnRow .bttn, .midWrapper .bttnRow .bttn, .inputWrapper .bttnRow .bttn, .arrayStringBttnWrap .bttn{
+		width: 30px;
+	    height: 18px;
+	    text-align: center;
+	    display: inline-block;
+	    padding: 3px 5px 7px;
+	    cursor: pointer;
+	    margin: 3px 1px;
+	    border: 1px solid #d4d4d4;
+	    border-radius: 3px;
+	    font-family: Tahoma;
+	    background: #efefef;
+	    box-shadow: -1px -1px 3px #747474 inset;
+	}
+
+	.midWrapper .bttnRow .bttn{
+		width: 70px;
+		padding: 10px 5px 15px;
+	}
+
+	.inputWrapper .bttnRow {
+		margin-top: 10px;
+	}
+
+	.inputWrapper .bttnRow .bttn{
+		width: 99px;
+		padding: 10px;
+	}
+
+	.arrayStringBttnWrap .bttn{
+		width: 68px !important;
+		padding:8px 10px 10px !important;
+	}
+
+	#calcresultId, .display{
+		width: 179px;
+		padding: 5px 3px 3px;
+		font-size: 20px;
+		margin-bottom: 10px;
+		border: 1px solid #d4d4d4;
+		box-shadow: 1px 1px 3px #747474 inset;
+	}
+
+	.display{
+		width: 1290px;
+		height: 200px;
+		background: #fff;
+		text-align: center;
+		overflow: auto;
+	}
+
+	.inputRow .inputField{
+		margin: 10px 0px 5px;
+		font-size: 14px;
+		font-family: Tahoma;
+	}
+
+	.inputBox{
+		width: 238px;
+		padding: 6px;
+		border: 1px solid #cecece;
+	}
+
+	.strongColorChange{
+		color:red;
+		font-size:26px;
+	}

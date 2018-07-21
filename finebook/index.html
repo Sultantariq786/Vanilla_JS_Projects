@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fine Book</title>
+	<link rel = "stylesheet" href="css/fineBook.css" type="text/css">
+</head>
+<body>
+
+<div class="form">
+	<div><span>S.No.</span>:<input type="number" id="sNo" /></div>
+	<div><span>Name</span>:<input type="text" id="name" /></div>
+	<!-- <div class="error" id="errorName">Please enter a name</div> -->
+	<div><span>Fine in Rupees</span>:<input type="number" id="fine" /></div>
+	<!-- <div class="error" id="errorFine">Please enter fine amount</div> -->
+	<div><span>Reason for Fine</span>:<input type="text" id="reason" /></div>
+	<!-- <div class="error" id="errorReason">Please enter the reason</div> -->
+	<button id="submit" type="submit">Add the value</button>
+</div>
+<div class="title">Fine Book</div>
+<div id="info">
+	
+</div>
+
+<script type="text/javascript">
+	var record = [
+		{
+            "name" : "Vaibhav",
+            "fine" : 100,
+            "reason" : "Late for LLP"
+        },
+        {
+            "name" : "Tariq",
+            "fine" : 50,
+            "reason" : "Tracker not updated"
+        },
+        {
+            "name" : "Vinit",
+            "fine" : 80,
+            "reason" : "Hours not updated"
+        }
+	]
+
+	function retrieveInfo(){
+		var getLen = record.length;
+		var output = "<table width='600px' border='2px' align='center'><tr><th>S.No.</th><th>Name</th><th>Fine</th><th>Reason</th></tr>"	
+		for(var i=0; i<getLen; i++){
+			output += "<tr>";
+			output += "<td>"+(i+1)+"</td>";
+			output += "<td>"+record[i].name+"</td>";
+			output += "<td>"+record[i].fine+"</td>";
+			output += "<td>"+record[i].reason+"</td>";
+			output += "</tr>";
+		}
+		output += "</table>";
+		document.getElementById('info').innerHTML = output;
+        // localStorage.setItem('record', record);
+	}
+	retrieveInfo();
+
+	function changeName(){
+		var getSn = (document.getElementById('sNo').value)-1;
+		//alert(getSn);
+		var getName = document.getElementById('name').value;
+		var getFine = document.getElementById('fine').value;
+		var getReason = document.getElementById('reason').value;
+		//alert(record[getSn]);
+		record[getSn] = [];
+		record[getSn].name = getName;
+		record[getSn].fine = getFine;
+		record[getSn].reason = getReason;
+		//alert(record[getSn]);
+		retrieveInfo();
+	}
+
+	// document.getElementById('submit').onclick = function validator(){
+	// var getName = document.getElementById('name').value;
+	// var getFine = document.getElementById('fine').value;
+	// var getReason = document.getElementById('reason').value;
+	// var errorName = document.getElementById('errorName');
+	// var errorFine = document.getElementById('errorFine');
+	// var errorReason = document.getElementById('errorReason');
+	// 	/*if(getName !== "" && getFine !== "" && getReason !== ""){
+	// 		document.getElementById('submit').onclick = changeName;
+	// 	}else */
+	// 	if((getName == "") && (getFine == "") && (getReason == "")){
+	// 		errorName.style.display = 'inline-block';
+	// 		errorFine.style.display = 'inline-block';
+	// 		errorReason.style.display = 'inline-block';
+	// 	}else if((getName !== "") && (getFine == "") && (getReason == "")){
+	// 		errorFine.style.display = 'inline-block';
+	// 		errorReason.style.display = 'inline-block';
+	// 	}else if((getName !== "") && (getFine !== "") && (getReason == "")){
+	// 		errorReason.style.display = 'inline-block';
+	// 	}else if((getName !== "") && (getFine !== "") && (getReason !== "")){
+	// 		document.getElementById('submit').onclick = changeName;
+	// 	}
+	// }
+
+	document.getElementById('submit').onclick = changeName;
+
+
+</script>
+</body>
+</html>

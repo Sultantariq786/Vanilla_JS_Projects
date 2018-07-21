@@ -1,0 +1,442 @@
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body	{
+	margin: 0px;
+	padding: 0px;
+/*	background: -webkit-gradient(linear,left top,left bottom,from(#fcfcfc),to(#c2c2c2));
+    background: -moz-linear-gradient(top,#fcfcfc,#c2c2c2);*/
+    background: #c3c3c3;
+}
+
+.fltLeft{
+	float: left;
+}
+
+.fltRight{
+	float: right;
+}
+
+.clear{
+	clear: both;
+}
+
+.center{
+	margin: 0px auto;
+}
+
+.pageWrapper{
+	width: 100%;
+	min-height: 650px;
+	font-family: 'Roboto', sans-serif;
+    background: -webkit-gradient(linear,left top,left bottom,from(#fcfcfc),to(#c2c2c2));
+    background: -moz-linear-gradient(top,#fcfcfc,#c2c2c2);
+}
+
+.midContentWrap{
+	width: 850px;
+}
+
+#secondGallery, #thirdGallery, #fourthGallery, #fifthGallery {display: none;}
+
+.tabActive{
+	color: #D20000;
+    text-shadow: 1px 1px 1px #717171;
+}
+
+
+
+.effect2
+{
+  position: relative;
+}
+.effect2:before, .effect2:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  box-shadow: 0 15px 10px #777;
+  transform: rotate(-3deg);
+}
+.effect2:after
+{
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
+
+
+/*Common CSS Ends*/
+
+/*Top Header CSS Starts*/
+.topHeader{
+	width: 100%;
+	height: 30px;
+	background: #e7e7e7;
+	border-bottom: 1px solid #e2dcdc;
+}
+
+.topNav ul{
+	list-style-type: none;
+}
+
+.topNav ul li{
+	float: left;
+	padding: 5px 30px;
+	cursor: pointer;
+	border-right: 1px solid #d4d4d4;
+}
+
+/*Top Header CSS Ends*/
+
+/*Title CSS Starts*/
+
+.titleWrap{
+display: none;
+}
+
+.titleWrap h1{
+    padding: 4px;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #333;
+    background: -webkit-gradient(linear,left top,left bottom,from(#f7f7f7),to(#c2c2c2));
+    background: -moz-linear-gradient(top,#f7f7f7,#c2c2c2);
+    border-bottom: 3px solid #c9c7c7;
+    text-shadow: -3px -1px 3px #9FA3A2;
+    font-family: 'Open Sans Condensed','Arial Narrow', serif;
+    font-weight: normal;
+}
+
+/*Title CSS Ends*/
+
+/*midWrap CSS Starts*/
+
+.slider{
+	width: 850px;
+	height: 470px;
+	overflow: hidden;
+}
+
+.slider img{
+	width: 100%;
+	height: 100%;
+
+}
+
+.shadowImgBoxTop, .shadowImgBoxBottom{
+	background: #fafafa;
+    height: 5px;
+    width: 100%;
+    margin-top: 10px;
+    border-top-right-radius: 100%;
+    border-top-left-radius: 100%;
+    box-shadow: 0px 0px 14px #676666;
+}
+.shadowImgBoxBottom{
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    margin: 0px 0px 10px;
+}
+
+/*midWrap CSS Ends*/
+
+/*next / previous Wrap CSS*/
+
+.next, .prev{
+	width: 50px;
+	height: 477px;
+	position: absolute;
+	border: 1px solid #e5e5e5;
+	background: #ad0000;
+	text-align: center;
+}	
+
+.next{
+	top: 0;
+	right: 0;
+	border-left: none;
+}
+
+.prev{
+	top: 0;
+	border-right: none;
+}
+
+.text{
+	margin-top: 220px;
+	color: #e5e5e5;
+	cursor: pointer;
+}
+
+/*next / previous Wrap CSS Ends*/
+
+/*footerWrap CSS Starts*/
+
+.footerWrap{
+	width: 100%;
+	height: 25px;
+	bottom: 0px;
+	position: fixed;
+	background: #e7e7e7;
+}
+
+.footNote{
+	font-size: 14px;
+	padding: 4px;
+	/*color:#ab0000;*/
+    color: #B3B3B3;
+    /*text-shadow: -1px -1px 0px #020202;*/
+}
+
+.footNote span{
+	color:#ab0000;
+}
+
+/*footerWrap CSS Ends*/
+
+
+/*=============================================================================
+							   CSS for Gallery 2
+================================================================================*/
+
+/*next / previous Wrap CSS*/
+
+.next2, .prev2{
+	width: 75px;
+	height: 533px;
+	cursor: pointer;
+	position: absolute;
+	background: #850000;
+	text-align: center;
+	box-shadow: 2px -4px 8px #000;
+}	
+
+.next2{
+	top: 125px;
+	right: 0;
+	border-left: none;
+	transform: rotate(45deg);
+}
+
+.prev2{
+	top: 125px;
+	border-right: none;
+	transform: rotate(-45deg);
+}
+
+.text2{
+	margin-top: 270px;
+	color: #e5e5e5;
+	cursor: pointer;
+	text-shadow: 1px 1px 7px #000;
+}
+
+.text2:hover{
+	color: #fff;
+}
+/*next / previous Wrap CSS Ends*/
+
+/*=============================================================================
+							   CSS for Gallery 3
+================================================================================*/
+
+/*midWrap CSS Starts*/
+.captionBox{
+	position: absolute;
+    bottom: 200px;
+    text-align: center;
+    width: 100%;
+    padding: 40px 30px;
+    transform: rotate(-15deg);
+    background: #000;
+    color: #fff;
+    opacity: 0;
+    left: -30px;
+    overflow: hidden;
+    transition: all 1s ease;
+}
+
+.captionBox:hover{
+	bottom: 44px; 
+	overflow: visible;
+	opacity: 0.60;
+	transform: scale(1.5) rotate(0deg);
+}
+
+/*midWrap CSS Ends*/
+
+/*Thumb Images CSS*/
+
+.thumbImgWrap{
+	width: 850px;
+}
+
+.thumbImgWrap img{
+	width: 97px;
+	height: 70px;
+	cursor: pointer;
+	border: 10px solid #848484;
+}
+
+.activeThumb{
+	border: 10px solid #fff !important;
+	box-shadow: 1px 1px 5px #000;
+}
+
+/*Thumb Images CSS Ends*/
+
+/*=============================================================================
+							   CSS for Gallery 4
+================================================================================*/
+
+/*midWrap CSS Starts*/
+.captionBox4{
+	position: absolute;
+    bottom: 200px;	
+    text-align: center;
+    width: 100%;
+    padding: 40px 30px;
+    transform: rotate(-15deg);
+    background: #000;
+    color: #fff;
+    opacity: 0.40;
+    left: -30px;
+    overflow: hidden;
+    transition: all 1s ease;
+}
+
+.captionBox4:hover{
+	bottom: 110px;
+	word-wrap: break-word; 
+	padding: 130px 30px;
+	overflow: visible;
+	opacity: 0.60;
+	transform: scale(1.5) rotate(0deg);
+}
+
+/*midWrap CSS Ends*/
+
+/*next / previous Wrap CSS*/
+
+.next4, .prev4{
+	width: 45px;
+    height: 55px;
+    cursor: pointer;
+    position: absolute;
+    opacity: 0.35;
+    text-align: center;
+    border: 1px solid #000;
+    box-shadow: 1px 1px 3px #212121;
+}	
+
+.next4{
+	top: 200px;
+	right: 0;
+	border-bottom-left-radius: 25%;
+    border-top-left-radius: 25%;
+    background: url(../images/next.png) no-repeat 14px 7px #FFFAFA;
+}
+
+.prev4{
+	top: 200px;
+	border-right: none;
+	border-bottom-right-radius: 25%;
+    border-top-right-radius: 25%;
+    background: url(../images/prev.png) no-repeat 14px 7px #FFFAFA;
+}
+
+/*next / previous Wrap CSS Ends*/
+
+/*Thumb Images CSS*/
+
+.thumbImgWrap4{
+	width: 850px;
+}
+
+.thumbImgWrap4 img{
+	width: 97px;
+	height: 70px;
+	cursor: pointer;
+	border-radius: 15px;
+	border: 10px solid #fff;
+}
+
+.activeThumb4{
+	border: 10px solid #848484 !important;
+	box-shadow: 1px 1px 5px #000;
+}
+
+/*Thumb Images CSS Ends*/
+
+/*=============================================================================
+							   CSS for Gallery 5
+================================================================================*/
+
+.thumbImgWrap5{
+	width: 850px;
+	height: 92px;
+	overflow: hidden;
+	border: 5px solid #fff;
+	border-radius: 10px;
+	padding: 5px 0px 3px;
+	box-shadow: 1px 1px 8px #000 inset;
+}
+
+.thumbImgWrap5 img{
+	width: 98px;
+	height: 70px;
+	cursor: pointer;
+	border-radius: 15px;
+	border: 10px solid #fff;
+}
+
+
+.relative{
+	position: relative;
+}
+
+.thumbInner{
+	position: absolute;
+	width: 1250px;
+}
+
+.thumbPrev, .thumbNext{
+	position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 36px;
+    opacity: 0.55;
+    cursor: pointer;
+    background: url(../images/thumbArrowlt.png) no-repeat 10px 10px #000;
+}
+
+.thumbPrev:hover, .thumbNext:hover{
+	opacity: 0.65;
+}
+
+.thumbNext{
+	right: 0px;
+	border-bottom-left-radius: 10px;
+	border-top-left-radius: 10px;
+	background: url(../images/thumbArrowrt.png) no-repeat 12px 10px #000;
+}
+
+.thumbPrev{
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.freezThumbScroll{
+	cursor: default;
+}

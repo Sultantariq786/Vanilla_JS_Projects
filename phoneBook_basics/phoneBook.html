@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Phone Book</title>
+	<link rel = "stylesheet" href="css/phoneBook.css" type="text/css">
+</head>
+<body>
+
+<div class="form">
+	<div><span>S.No.</span>:<input type="text" id="fld1" /></div>
+	<div><span>Name</span>:<input type="text" id="fld2" /></div>
+	<div class="error" id="errorName">Please enter a name</div>
+	<div><span>Phone Number</span>:<input type="text" id="fld3" /></div>
+	<div class="error" id="errorNumber">Please enter mobile number</div>
+	<div><span>Category</span>:<input type="text" id="fld4" /></div>
+	<div class="error" id="errorCategory">Please enter a category</div>
+	<button id="btn">Add the value</button>
+</div>
+<div class="title">Contact Book</div>
+<div id="info">
+	
+</div>
+
+<script type="text/javascript">
+	var students = [
+		['Tariq','9718378636','Self'],
+		['Aamir','9845663525','Brother'],
+		['Sandeep','8545665541','Friend'],
+		['Vyal','9585235614','Friend'],
+		['Arshi','9501547863','Friend']
+	]
+
+	function retrieveInfo(){
+		var getLen = students.length;
+		var output = "<table width='600px' border='2px' align='center'><tr><th>S.No.</th><th>Name</th><th>Mobile No.</th><th>Category</th></tr>"	
+		for(var i=0; i<getLen; i++){
+			output += "<tr>";
+			output += "<td>"+(i+1)+"</td>";
+			output += "<td>"+students[i][0]+"</td>";
+			output += "<td>"+students[i][1]+"</td>";
+			output += "<td>"+students[i][2]+"</td>";
+			output += "</tr>";
+		}
+		output += "</table>";
+
+		document.getElementById('info').innerHTML = output;
+	}
+	retrieveInfo();
+
+	function changeName(){
+		var getSn = (document.getElementById('fld1').value)-1;
+		//alert(getSn);
+		var getName = document.getElementById('fld2').value;
+		var getPhone = document.getElementById('fld3').value;
+		var getCategory = document.getElementById('fld4').value;
+
+		//alert(students[getSn]);
+		students[getSn] = [];
+		students[getSn][0] = getName;
+		students[getSn][1] = getPhone;
+		students[getSn][2] = getCategory;
+		//alert(students[getSn]);
+		retrieveInfo();
+	}
+
+	document.getElementById('btn').onclick = function validator(){
+	var getName = document.getElementById('fld2').value;
+	var getPhone = document.getElementById('fld3').value;
+	var getCategory = document.getElementById('fld4').value;
+	var errorName = document.getElementById('errorName');
+	var errorNumber = document.getElementById('errorNumber');
+	var errorCategory = document.getElementById('errorCategory');
+		/*if(getName !== "" && getPhone !== "" && getCategory !== ""){
+			document.getElementById('btn').onclick = changeName;
+		}else */
+		if((getName == "") && (getPhone == "") && (getCategory == "")){
+			errorName.style.display = 'inline-block';
+			errorNumber.style.display = 'inline-block';
+			errorCategory.style.display = 'inline-block';
+		}else if((getName !== "") && (getPhone == "") && (getCategory == "")){
+			errorNumber.style.display = 'inline-block';
+			errorCategory.style.display = 'inline-block';
+		}else if((getName !== "") && (getPhone !== "") && (getCategory == "")){
+			errorCategory.style.display = 'inline-block';
+		}else if((getName !== "") && (getPhone !== "") && (getCategory !== "")){
+			document.getElementById('btn').onclick = changeName;
+		}
+	}
+
+		/*document.getElementById('btn').onclick = changeName;*/
+
+
+</script>
+</body>
+</html>

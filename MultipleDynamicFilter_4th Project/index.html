@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Multiple Dynamic Filter</title>
+	<link rel="stylesheet" type="text/css" href="css/multiFilterGallery.css">
+<!-- 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
+ --></head>
+<body>
+
+	<header>
+		<section class="contentWrap">
+			<section class="title">DYNAMIC MULTIPLE FILTER GALLERY</section>
+			<section class="allCatWrap">
+				<ul>
+					<li>
+						<select id="mainCatId">
+							<option value="categories">CATEGORIES</option>
+							<option value="wildlife">WILD LIFE</option>
+							<option value="vehicles">VEHICLES</option>
+						</select>
+					</li>
+					<li>
+						<select id="subCatId">
+							<!-- Dynamic Level 2 will be created here -->
+						</select>
+					</li>
+					<li>
+						<select id="subSubCatId">
+							<!-- Dynamic Level 3 will be created here -->
+						</select>
+					</li>
+					<li>
+						<select id="catImgId">
+							<!-- Dynamic Image List will be created here -->
+						</select>
+					</li>
+				</ul>
+			</section>
+		</section>
+	</header>
+
+	<section class="thumbsWrap" id="selectedCatImg">
+			<!-- Dynamic Images will be displayed here -->
+			<img class="randomSlider" id="randomSlider" src="images/vehicles/domestic/cars/0.jpg" title="Please select any category from above to view related images"/>
+	</section>
+	<section id="overlayWrap">
+	<section class="contentWrap wrapPopup">
+		<img src="images/wildlife/birds/huntingbirds/0.jpg" alt="popupImg" id="popupImg"/>
+		<section class="prevBttn" id="prevId"></section>
+		<section class="nextBttn" id="nextId"></section>
+	</section>
+	</section>
+
+	<section class="magGlassWrap" id="magGlass"></section>
+
+	<footer>
+		<section class="contentWrap">
+			<section class="left">Guided by <section>Ravi Sir</section></section>
+			<section class="right">Designed &amp; developed by <section>Tariq Khan</section></section>
+		</section>
+	</footer>
+
+<script type="text/javascript" src="js/multiFilterGallery.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Filter With Display</title>
+	<link rel="stylesheet" type="text/css" href="css/simpleFilterCSS.css">
+</head>
+<body>
+	<div class="galleryTitle">Simple Filter Gallery with JS using CSS Display</div>
+	<div class="filterWrap">
+		<div class="filterBttn">
+			<select class="filterSelect" id="filterGroup" onchange="myFunction()">
+				<option value="all">All</option>
+				<option value="fruits">Fruits</option>
+				<option value="flowers">Flowers</option>
+				<option value="vegetables">Vegetables</option>
+				<option value="drinks">Drinks</option>
+			</select>
+		</div>
+
+		<div class="filterImagesWrap">
+			<div class="catImgWrap" id="all">
+				<ul>
+					<li><a href="#"><img src="images/fruits0.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="images/fruits1.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="images/fruits2.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="images/fruits3.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="images/flowers0.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="images/flowers1.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="images/flowers2.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="images/flowers3.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="images/vegetables0.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="images/vegetables1.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="images/vegetables2.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="images/vegetables3.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="images/drinks0.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="images/drinks1.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="images/drinks2.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="images/drinks3.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="images/flowers0.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="images/flowers1.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="images/flowers2.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="images/flowers3.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="images/vegetables0.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="images/vegetables1.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="images/vegetables2.jpg" alt="" /></a></li>
+				</ul>
+			</div>
+			<div class="catImgWrap" id="fruits">
+				<ul>
+					<li><a href="#"><img src="images/fruits0.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="images/fruits1.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="images/fruits2.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="images/fruits3.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="images/fruits0.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="images/fruits1.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="images/fruits2.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="images/fruits3.jpg" alt="" /></a></li>
+				</ul>
+			</div>
+			<div class="catImgWrap" id="flowers">
+				<ul>
+					<li><a href="#"><img src="images/flowers0.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="images/flowers1.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="images/flowers2.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="images/flowers3.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="images/flowers3.jpg" alt="" /></a></li>
+				</ul>
+			</div>
+			<div class="catImgWrap" id="vegetables">
+				<ul>
+					<li><a href="#"><img src="images/vegetables0.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="images/vegetables1.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="images/vegetables2.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="images/vegetables3.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="images/vegetables0.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="images/vegetables2.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="images/vegetables3.jpg" alt="" /></a></li>
+				</ul>
+			</div>
+			<div class="catImgWrap" id="drinks">
+				<ul>
+					<li><a href="#"><img src="images/drinks0.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="images/drinks1.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="images/drinks2.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="images/drinks3.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="images/drinks0.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="images/drinks3.jpg" alt="" /></a></li>
+				</ul>	
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+<script type="text/javascript" src="js/simpleFilterJs.js"></script>
+</body>
+</html>

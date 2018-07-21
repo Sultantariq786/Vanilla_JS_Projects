@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gallery using Object Oriented JS</title>	
+	<link rel="stylesheet" href="css/imageGallery.css" type="text/css">
+	<!-- <link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet" type="text/css"> -->
+	<!-- <link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'> -->
+</head>
+<body>	
+	<div class="pageWrapper">
+		<div class="titleWrap">
+			<h1>MY IMAGE GALLERY WITH OOJS</h1>
+		</div><!-- titleWrap Ends -->
+
+		<div class="midContentWrap center" style="position: relative; overflow: hidden;" id="sliderWrap">
+			<div class="shadowImgBoxTop"></div>
+			<div class="slider">
+				<img src="images/pic1.jpg" id="galleryShow" />
+			</div>
+			<div class="shadowImgBoxBottom"></div>
+			<!-- Next n Previous Baars -->
+			<div class="next" id="nextId">
+				<div class="text">
+					N <br />
+					E <br />
+					X <br />
+					T <br />
+				</div>
+			</div>
+			<div class="prev" id="prevId">
+				<div class="text">
+					P <br />
+					R <br />
+					E <br />
+					V <br />
+				</div>
+			</div>
+		</div><!-- midWrap Ends -->
+
+		<div class="footerWrap">
+			<div class="midContentWrap center">
+				<div class="footNote fltLeft">Designed &#38; Developed by <span>Tariq Khan</span></div>
+				<div class="footNote fltRight">Guided by <span>Ravi Sir</span></div>
+			</div>
+		</div><!-- footerWrap Ends -->
+	</div><!-- pageWrapper Ends -->
+	<script type="text/javascript" src="js/imageGallery.js"></script>
+</body>
+</html>

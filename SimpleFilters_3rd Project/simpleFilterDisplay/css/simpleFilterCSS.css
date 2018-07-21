@@ -1,0 +1,99 @@
+/*CSS Document Author Tariq*/
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	margin: 0px;
+	padding: 0px;
+	background: #e5e5e5;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+.clear{
+	clear: both;
+}
+
+.center{
+	margin: 0px auto;
+}
+
+.galleryTitle {
+    /* font-family: 'Lato', sans-serif; */
+    font-family: Tahoma;
+    font-size: 18px;
+    color: #ececec;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 8px 10px 10px;
+    background: #3c3c3c;
+}
+
+.filterWrap{
+	width: 980px;
+	height: 100;
+	padding: 10px 0;
+	margin: 25px auto;
+	border: 5px solid #000;
+	border-radius: 15px;
+	background: #fff;
+	box-shadow: 0px 0px 25px #005a77 inset;
+	animation: shadowColor 5s ease normal infinite;
+	-moz-animation: shadowColor 5s ease normal infinite;
+	-o-animation: shadowColor 5s ease normal infinite;
+	-ms-animation: shadowColor 5s ease normal infinite;
+	-webkit-animation: shadowColor 5s ease normal infinite;
+}
+
+@keyframes shadowColor{
+	0%{
+	box-shadow: 0px 0px 25px #005a77 inset;
+	}50%{
+	box-shadow: 0px 0px 25px #00c34e inset;
+	}100%{
+	box-shadow: 0px 0px 25px #c30000 inset;
+	}
+}
+
+.filterBttn{
+	width: 317px;
+	margin: 10px auto;
+}
+
+.filterSelect{
+	width: 308px;
+	padding: 5px;
+	cursor: pointer;
+}
+
+.catImgWrap{
+	padding: 16px;
+}
+
+.catImgWrap ul{
+	list-style-type: none;
+}
+
+.catImgWrap ul li{
+	float: left;
+	margin-right: 8px;
+}
+
+.catImgWrap img{
+	width: 150px;
+	height: 100px;
+	border-radius: 10px;
+}
+
+#fruits, #flowers, #vegetables, #drinks{
+	display: none;
+}
